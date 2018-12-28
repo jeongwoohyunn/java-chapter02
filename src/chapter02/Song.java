@@ -1,13 +1,30 @@
 package chapter02;
 
 public class Song {
-	private String title; 
+	private String title;
 	private String artist; 
 	private String album; 
 	private String composer; 
 	private int year; 
 	private String track;
-	
+	public Song() {
+		//디폴트 생성자 따로 만들어줘야된다.
+	}
+	public Song(String title,String artist) {
+		this(title,artist,null,null,0,null);
+		//초기화 코드
+	}
+	//중복되는 코드는 피해야된다.
+	//source constructor field
+	public Song(String title, String artist, String album, String composer, int year, String track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
+
 	public String getTitle() {
 		return title;
 	}

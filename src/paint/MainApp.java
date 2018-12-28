@@ -8,6 +8,10 @@ public class MainApp {
 		p1.setY(200);
 		
 		p1.show();
+		
+		Point p2 = new Point(50,50);//생성자 오버로딩
+		p2.show();
+		p2.show(false);
 	}
 
 }

@@ -11,6 +11,12 @@ public class SongTest {
 		song.setAlbum("Real");
 		song.setTrack("3번 track");
 		song.show();
+		
+		Song song2 = new Song("Love Shot","EXO",null,null,0,null);
+		song2.show();
+		
+		Song song3 = new Song("Tempo","EXO");
+		song3.show();//생성자 오버로딩
 	}
 
 }
