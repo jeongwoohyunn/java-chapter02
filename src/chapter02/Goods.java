@@ -10,6 +10,7 @@ public class Goods {
 	
 	public static int countOfGoods;
 	
+	//public Goods() {
 	public Goods() {
 		//생성자
 		countOfGoods++;
