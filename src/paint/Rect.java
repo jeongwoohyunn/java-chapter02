@@ -1,6 +1,6 @@
 package paint;
 
-public class Rect {
+public class Rect extends Shape{
 	private int x1;
 	private int x2;
 	private int x3;
@@ -10,8 +10,6 @@ public class Rect {
 	private int y3;
 	private int y4;
 	
-	private String lineColor;
-	private String fillColor;
 	public int getX1() {
 		return x1;
 	}
@@ -59,18 +57,6 @@ public class Rect {
 	}
 	public void setY4(int y4) {
 		this.y4 = y4;
-	}
-	public String getLineColor() {
-		return lineColor;
-	}
-	public void setLineColor(String lineColor) {
-		this.lineColor = lineColor;
-	}
-	public String getFillColor() {
-		return fillColor;
-	}
-	public void setFillColor(String fillColor) {
-		this.fillColor = fillColor;
 	}
 	public void draw() {
 		System.out.println("사각형을 그렸습니다.");

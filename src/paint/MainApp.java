@@ -25,19 +25,34 @@ public class MainApp {
 		//p3.show(false);
 		drawPoint(p3);
 		
-		Triangle triangle = new Triangle();
-		drawtriangle(triangle);
+		Shape triangle = new Triangle();
+		//Shape s = triangle;
+		//draw(s);
+		draw(triangle);
 		
-		Rect rect = new Rect();
-		drawrect(rect);
+		Shape rect = new Rect();
+		//drawrect(rect);
+		draw(rect);
+		Shape circle = new Circle();
+		//drawcircle(circle);
+		draw(circle);
 	}
 	public static void drawPoint(Point point) {
 		point.show();
 	}
-	public static void drawtriangle(Triangle triangle) {
-		triangle.draw();
-	}
-	public static void drawrect(Rect rect) {
-		rect.draw();
+//	public static void drawtriangle(Triangle triangle) {
+//		triangle.draw();
+//	}
+//	public static void drawrect(Rect rect) {
+//		rect.draw();
+//	}
+//	public static void drawcircle(Circle circle) {
+//		circle.draw();
+//		//구현을 하고 test case test
+//		//커버리지 test가 있냐? 없으면 유지보수가힘들다.
+//		
+//	}
+	public static void draw(Shape shape) {
+		shape.show();
 	}
 }
