@@ -1,10 +1,12 @@
-package paint;
+package com.duzone.paint.point;
 
-public class Point {
+import com.duzone.paint.i.Drawable;
+
+public class Point implements Drawable{
 	private int x;
 	private int y;
 	public Point() {
-		
+		System.out.println("Point() called");
 	}
 	public Point(int x,int y) {
 		this.x=x;
@@ -40,6 +42,10 @@ public class Point {
 	 * 	메소드를 여러개 쓰지말고 show에서
 	 * }
 	 */
+	@Override
+	public void draw() {
+		show();
+	}
 	
 	//여러 메소드를 쓰는것보다 하나의 메소드로 컨트롤할수있다.
 }
